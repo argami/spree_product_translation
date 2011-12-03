@@ -11,6 +11,9 @@ Its inspired and started from:
 
 Both original from [jeroenj](https://github.com/jeroenj)
 
+#On Travis CI
+[![Build Status](https://secure.travis-ci.org/argami/spree_product_translation.png)](http://travis-ci.org/argami/spree_product_translation)
+
 # Installation
 In your Gemfile you just add:
 
