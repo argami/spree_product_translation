@@ -9,7 +9,7 @@ require 'spree_core/testing_support/common_rake'
 RSpec::Core::RakeTask.new
 Cucumber::Rake::Task.new
 
-task :default => [:spec, :cucumber ]
+task :default => [:spec]
 
 spec = eval(File.read('spree_product_translation.gemspec'))
 
