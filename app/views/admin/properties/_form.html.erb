@@ -1,0 +1,24 @@
+<%= f.field_container :name do %>
+  <%= f.label :name, t("name") %> <span class="required">*</span><br />
+  <%= f.text_field :name %>
+  <%= f.error_message_on :name %>
+<% end %>
+
+<div class="tabs">
+  <ul>
+    <% I18n.available_locales.each do |l| %>
+      <li><%= link_to t(l), "#tabs-#{l}" %></li>
+    <% end %>
+  </ul>
+  <% I18n.available_locales.each do |l| %>
+    <div id="tabs-<%= l %>">
+      <%= f.globalize_fields_for l do |g| %>
+        <%= f.field_container :presentation do %>
+          <%= g.label :presentation, t("presentation") %> <% if l.to_sym == I18n.default_locale %><span class="required">*</span><% end %><br />
+          <%= g.text_field :presentation %>
+          <%= f.error_message_on :presentation %>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
