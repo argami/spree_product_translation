@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    spree_product_translation (0.70.1)
+    spree_product_translation (0.0.1)
       globalize3 (~> 0.2.0.beta3)
       spree_core (>= 0.70.1)
 

@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_product_translation'
-  s.version     = '0.70.1'
+  s.version     = '0.0.1'
   s.summary     = 'Translate products in multiple languages'
   s.description = 'Translate products in multiple languages'
   s.required_ruby_version = '>= 1.8.7'
