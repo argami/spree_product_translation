@@ -17,7 +17,21 @@ Both original from [jeroenj](https://github.com/jeroenj)
 # Installation
 In your Gemfile you just add:
 
-    gem 'spree_product_translations', :git => 'https://github.com/argami/spree_product_translation'
+    <pre>
+    gem 'spree_product_translations'
+    </pre>
+    
+    or
+    
+    <pre>
+    gem 'spree_product_translations', :git => 'https://github.com/argami/spree_product_translation', :tag => 'v0.0.1'
+    </pre>
+    
+    to use edge
+    
+    <pre>
+      gem 'spree_product_translations', :git => 'https://github.com/argami/spree_product_translation'
+    </pre>
 
 Then install the gem:
 
