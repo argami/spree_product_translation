@@ -21,7 +21,7 @@ module SpreeProductTranslation
       end
       
       ::Product.class_eval do
-        translates :name, :description, :meta_description, :meta_keywords, :copy => true
+        translates :name, :description, :meta_description, :meta_keywords, :permalink, :copy => true
 
         accepts_nested_attributes_for :translations
       end

@@ -1,6 +1,6 @@
 class AddTranslationTables < ActiveRecord::Migration
   def self.up
-    Product.create_translation_table! :name => :string, :description => :text, :meta_description => :text, :meta_keywords => :text
+    Product.create_translation_table! :name => :string, :permalink => :string, :description => :text, :meta_description => :text, :meta_keywords => :text
     Property.create_translation_table! :presentation => :string
     Prototype.create_translation_table! :name => :string
     Taxonomy.create_translation_table! :name => :string
