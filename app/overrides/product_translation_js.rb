@@ -4,5 +4,5 @@ Deface::Override.new(
   :insert_bottom => "[data-hook='admin_inside_head']",
   :text => %Q[<%= javascript_tag "$(function(){ 
                       var tabs = $('.tabs');
-                      if (tabs.hasOwnProperty('livequery'))
+                      if (tabs.length > 0)
                         tabs.livequery(function() { $(this).tabs(); }); });" %>])

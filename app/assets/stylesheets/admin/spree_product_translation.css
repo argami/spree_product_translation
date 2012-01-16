@@ -2,3 +2,7 @@
  *= require admin/spree_core
  *= require_tree .
 */
+
+div[data-hook="admin_product_form_right"] {
+	width:40%;
+}
